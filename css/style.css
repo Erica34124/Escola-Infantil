@@ -1,0 +1,13 @@
+body{
+    margin: 40px ;
+    background-color: rgb(168, 207, 207);
+}
+h1{
+    margin: 40px;
+}
+button{
+    margin: 20px;
+}
+.form-group{
+    margin-top: 20px;
+}

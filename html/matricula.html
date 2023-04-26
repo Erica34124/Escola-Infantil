@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../html/index.html">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="navbar-brand" href="../html/cadastrar.html">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="../html/atualizarCadastro.html">atualizarCadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="../html/matricula.html">matricular Aluno</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="../html/turmas.html">Cadastrar Turmas</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="../html/buscarTodos.html">Buscar todos os alunos</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
+    </div>
+  </nav>
+  
+    <header>
+        <h1>Cadastrar Matrícula</h1>
+    </header>
+
+    <form  action="" method="post" name="formMatricula" id="formMatricula" >
+      <div class="form-group">
+        <label for="idAluno">Identificação do Aluno</label>
+        <input name="idAluno" type="text" class="form-control" id="idAluno"  placeholder="Enter nome" value="">
+       </div>
+
+      <div class="form-group">
+        <label for="idTurma">Identificação da Turma</label>
+        <input name="idTurma" type="text" class="form-control" id="idTurma" placeholder="1">
+      </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="ano">Ano da turma</label>
+        <input name="ano" type="text" class="form-control" id="ano" placeholder="Maria do Bairro">
+      </div>      
+
+      </div>
+      <button type="submit" class="btn btn-primary" >Enviar</button>
+    </form>
+
+      <br>
+      <br>
+      <span id="span"></span>
+
+      <div>
+        <form action="" id="formdelete" name="formdelete">
+          <label for="deletar"><h5>Insira id da matrícula para deletar</h5></label>
+          <input name="deletar" type="text" class="form-control" id="deletar" placeholder="id" value="">
+          <button type="submit" class="btn btn-danger" >Deletar turma</button>
+        </form>
+
+        <br>
+        <br>
+      <span id="spandelete"></span>
+        
+      </div>
+      <footer>
+        <h6 id="footer"></h6>
+      </footer>
+      <script src="../js/matricular.js"></script>
+</body>
+
+</html>
