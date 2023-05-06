@@ -75,15 +75,16 @@ function cadastrar(evento) {
     body: JSON.stringify(body),
   })
     .then((res) => res.json())
-    .then((dados) => console.log(dados))
+    .then((dados) => mostrar(formulario))
     .catch((error) => console.log("erro"));
 
-  mostrar(formulario);
+ 
 }
 
 function mostrar(body) {
   let output = "";
   let footer = `  Cadastro realizado com sucesso !`;
+  alert('Cadastro realizado com sucesso!')
 
   for (let user of body) {
     output += `<li>${user.name}:   ${user.value}</li>`;

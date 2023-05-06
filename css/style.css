@@ -1,13 +1,44 @@
-body{
-    margin: 40px ;
-    background-color: rgb(168, 207, 207);
+.body {
+    background-color: rgb(212, 232, 240);
 }
-h1{
+
+h1, h2, h3,h4 {
     margin: 40px;
 }
-button{
+
+.button {
     margin: 20px;
 }
-.form-group{
+
+.form-group {
     margin-top: 20px;
+}
+.formDelete{
+    margin-bottom: 80px;
+}
+
+.endereco input {
+    margin: 20px 0 0 0;
+}
+
+.telefone input {
+    margin: 20px 0 0 0;
+}
+
+.header img{
+    margin: 10px 10px 10px 200px;
+
+}
+.ul{
+    margin-left:  40px ;
+}
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+footer h5{
+    padding-top: 20px;
 }

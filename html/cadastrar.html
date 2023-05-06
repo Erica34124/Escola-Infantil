@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css" />
     <title>Document</title>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../html/index.html">Menu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/cadastrar.html">Cadastrar</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/atualizarCadastro.html">atualizarCadastro</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/matricula.html">matricular Aluno</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/turmas.html">Cadastrar Turmas</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/buscarTodos.html">Buscar todos os alunos</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
-      </div>
+<body class="body">
+  <nav class="navbar navbar-dark bg-primary ">
+    <a href="index.html" class="navbar-brand">
+      <h3>Menu</h3>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ul">
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/cadastrar.html">Cadastrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/atualizarCadastro.html"
+            >atualizar Cadastro</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/matricula.html"
+            >Matricular Aluno</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/turmas.html"
+            >Cadastrar Turmas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/buscarTodos.html"
+            >Buscar todos os alunos</a
+          >
+        </li>
+      </ul>
     </div>
   </nav>
   
@@ -44,30 +57,49 @@
         <h1>Cadastrar Aluno</h1>
     </header>
 
-    <form  action="" method="post" name="formCadastro" id="formCadastro" >
-      <div class="form-group">
+    <form  action="" method="post" name="formCadastro" id="formCadastro" class="container">
+      <div class="row">
+       <div class="form-group col-sm-12">
         <label for="nome">Nome</label>
         <input name="nome" type="text" class="form-control" id="nome"  placeholder="Enter email" value="">
        </div>
 
-      <div class="form-group">
+       <div class="form-group col-sm-12">
         <label for="nascimento">Nacimento</label>
         <input name="nascimento" type="text" class="form-control" id="nascimento" placeholder="10/10/2000">
+       </div>
       </div>
 
-      <div class="form-group">
+      <div class="row">
         <label for="endereco">Endereco</label>
-        <input name="cep" type="text" class="form-control" id="cep" placeholder="Cep">
-        <input name="logradouro" type="text" class="form-control" id="logradouro" placeholder="Nome da rua">
-        <input name="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro">
-        <input name="localidade" type="text" class="form-control" id="localidade" placeholder="Cidade">
-        <input name="uf" type="text" class="form-control" id="uf" placeholder="Estado">
+        <div class="form-group endereco col-sm-4"> 
+          <input name="cep" type="text" class="form-control" id="cep" placeholder="Cep">
+        </div>
+        <div class="form-group endereco col-sm-8"> 
+          <input name="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro">
+          
+        </div> 
+        <div class="form-group endereco col-12"> 
+          <input name="logradouro" type="text" class="form-control col-4" id="logradouro" placeholder="Nome da rua">
+        </div> 
+        <div class="form-group endereco col-sm-6"> 
+          <input name="localidade" type="text" class="form-control" id="localidade" placeholder="Cidade">
+        </div>
+        <div class="form-group endereco col-sm-6"> 
+          <input name="uf" type="text" class="form-control" id="uf" placeholder="Estado">
+        </div>
+       </div>
       </div>
 
-      <div class="form-group">
+      <div class="row">
         <label for="telefone">Telefone</label>
-        <input name="ddd" type="text" class="form-control" id="ddd" placeholder="19">
+        <div class="form-group telefone col-sm-6">
+          <input name="ddd" type="text" class="form-control col-sm-6" id="ddd" placeholder="19">
+       </div>
+       <div class="form-group telefone col-sm-6">
         <input name="numero" type="text" class="form-control" id="numero" placeholder="99 9999999">
+     </div>
+    
       </div>
 
       <div class="form-group">
@@ -87,22 +119,37 @@
       
 
       </div>
-      <button type="submit" class="btn btn-primary" >Enviar</button>
+      <button type="submit" class="btn btn-primary button" >Enviar</button>
     </form>
 
       <br>
       <br>
       <span id="span"></span>
       <div>
-        <form action="" id="formdelete" name="formdelete">
-          <label for="deletar"><h5>Insira id do aluno para deletar</h5></label>
-          <input name="deletar" type="text" class="form-control" id="deletar" placeholder="id" value="">
-          <button type="submit" class="btn btn-danger" >Deletar turma</button>
+
+        <form action="" id="formdelete" name="formdelete" class="formDelete">
+          <div class="container">
+            <label for="deletar"><h5>Insira id do aluno para deletar</h5></label>
+            <div class="row">
+              <div class="col-6">
+                <input name="deletar" type="text" class="form-control" id="deletar" placeholder="id" value="">
+                <button type="submit" class="btn btn-danger button" >Deletar turma</button>
+              </div>
+            </div>
+          </div>
         </form>
-      <footer>
-        <h6 id="footer"></h6>
-      </footer>
+
+        <footer class="dark bg-primary">
+          <div class="container">
+            <div class="row">
+              <h5 class="col-sm-12">Contato pelo telefone : 19 696969696</h5>
+            </div>
+          </div>
+        </footer>
+
       <script src="../js/cadastrar.js"></script>
+      <script src="/bootstrap/popper.min.js"></script>
+      <script src="/bootstrap/bootstrap.js"></script>
 </body>
 
 </html>

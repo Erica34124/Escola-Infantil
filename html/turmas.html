@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css" />
     <title>Document</title>
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../html/index.html">Menu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/cadastrar.html">Cadastrar</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/atualizarCadastro.html">atualizarCadastro</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/matricula.html">matricular Aluno</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/turmas.html">Cadastrar Turmas</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../html/buscarTodos.html">Buscar todos os alunos</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
-      </div>
+<body class="body">
+  <nav class="navbar navbar-dark bg-primary ">
+    <a href="index.html" class="navbar-brand">
+      <h3>Menu</h3>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ul">
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/cadastrar.html">Cadastrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/atualizarCadastro.html"
+            >atualizar Cadastro</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/matricula.html"
+            >Matricular Aluno</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/turmas.html"
+            >Cadastrar Turmas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="../html/buscarTodos.html"
+            >Buscar todos os alunos</a
+          >
+        </li>
+      </ul>
     </div>
   </nav>
   
@@ -93,10 +106,17 @@
       <span id="spandelete"></span>
         
       </div>
-      <footer>
-        <h6 id="footer"></h6>
+      <footer class="dark bg-primary">
+        <div class="container">
+          <div class="row">
+            <h5 class="col-sm-12">Contato pelo telefone : 19 696969696</h5>
+          </div>
+        </div>
       </footer>
+      
       <script src="../js/turmas.js"></script>
+      <script src="/bootstrap/popper.min.js"></script>
+      <script src="/bootstrap/bootstrap.js"></script>
 </body>
 
 </html>
